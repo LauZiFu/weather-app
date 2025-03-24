@@ -1,0 +1,36 @@
+.dropdown-container {
+    position: relative;
+    width: min-content;
+    margin: 0 auto;
+}
+
+.dropdown {
+    position: absolute;
+    width: max(min-content, 100%);
+    display: none;
+    transition: transform 0.2s ease-out;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+.active {
+    display: block;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+body {
+    height: 100vh;
+}
